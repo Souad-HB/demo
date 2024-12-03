@@ -18,5 +18,17 @@ jobs:
         uses: actions/setup-node@v1
         with: 
           node-version: 21.x
+
+      - name: Install dependencies
+        run: npm run install
+
+      - name: run Lint
+        run: npm run lint
+
+      - name: run build
+        run: npm run build
+
+      - name: run test
+        run: npm run test
       
 
